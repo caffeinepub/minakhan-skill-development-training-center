@@ -1,13 +1,14 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "Build a simple informational website for MINAKHAN SKILL DEVELOPMENT TRAINING CENTER, based on the content/design from an uploaded poster, using the center name consistently across the site and brand assets.",
+  "projectStateVersion": 15,
+  "summary": "Update the informational website branding to use the new training center name “MALANCHA TAILORING TRAINING-CENTER” consistently across the site UI, SEO/sharing metadata, and regenerated logo assets (replacing the prior “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” branding).",
   "architectural_notes": [
-    "Use the official training center name “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” consistently across UI text and SEO metadata; update the generated logo text accordingly."
+    "Display the training center address/location in English only; include it in both the Contact section and the site footer.",
+    "Use the official training center name “MALANCHA TAILORING TRAINING-CENTER” consistently across UI text and SEO metadata; update the generated logo text accordingly."
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Update the logo text to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (training-center-logo.dim_512x512.png > training-center-logo-minakhan.dim_512x512.png)\n- Update the favicon to match the updated logo styling (favicon.dim_64x64.png > favicon-minakhan.dim_64x64.png)",
+  "imageRequirements": "## Required Images\n- Square training center logo with the text “MALANCHA TAILORING TRAINING-CENTER” (training-center-logo-malancha.dim_512x512.png)\n- Simple favicon mark featuring the initials/mark for “MALANCHA TAILORING TRAINING-CENTER” (favicon-malancha.dim_64x64.png)",
   "existing_features": [
     {
       "id": "feature-create-a-simple-responsive-informational-website-for-the-training-center-referenced-in-the-uploaded-poster-image-using-english-for-all-user-facing-text",
@@ -88,6 +89,54 @@
         "REQ-11"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-website-to-display-the-provided-address-in-english-in-both-the-contact-section-under-the-location-field-and-in-the-footer-contact-column-replacing-the-current-location-text-do-not-display-any-bengali-version-of-the-address-anywhere-on-the-page",
+      "title": "Update the website to display the provided address in English in both the Contact section (under the \"Location\" field) and in the Footer \"Contact\" column, replacing the current location text. Do not display any Bengali version of the address anywhere on the page.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-newly-uploaded-poster-image-file-screenshot-2026-02-11-22-30-30-93-a23b203fd3aafc6dcb84e438dda678b6-1-jpg-as-an-additional-gallery-item-do-not-replace-any-existing-gallery-images-ensure-the-file-is-placed-under-the-frontend-public-assets-e-g-frontend-public-assets-uploaded-and-is-referenced-with-the-correct-public-url-path-from-the-gallery-ui",
+      "title": "Add the newly uploaded poster image file \"Screenshot_2026-02-11-22-30-30-93_a23b203fd3aafc6dcb84e438dda678b6-1.jpg\" as an additional Gallery item (do not replace any existing gallery images). Ensure the file is placed under the frontend public assets (e.g., frontend/public/assets/uploaded/) and is referenced with the correct public URL path from the Gallery UI.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-second-poster-currently-shown-in-the-gallery-the-image-currently-sourced-from-assets-uploaded-screenshot-2026-02-11-22-30-30-93-a23b203fd3aafc6dcb84e438dda678b6-1-jpg-with-the-newly-uploaded-image-file-fb-img-1767544089711-jpg-place-the-new-file-under-frontend-public-assets-uploaded-and-update-the-gallery-to-reference-it-via-the-correct-public-url-path-do-not-add-an-extra-gallery-item-the-gallery-should-still-display-the-same-number-of-items-as-before-with-only-the-second-item-changed",
+      "title": "Replace the second poster currently shown in the Gallery (the image currently sourced from \"/assets/uploaded/Screenshot_2026-02-11-22-30-30-93_a23b203fd3aafc6dcb84e438dda678b6-1.jpg\") with the newly uploaded image file \"FB_IMG_1767544089711.jpg\". Place the new file under frontend/public/assets/uploaded/ and update the Gallery to reference it via the correct public URL path. Do not add an extra Gallery item; the Gallery should still display the same number of items as before, with only the second item changed.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-training-center-name-text-minakhan-skill-development-training-center-with-malancha-tailoring-training-center-everywhere-it-appears-in-the-visible-ui-including-at-minimum-the-header-brand-text-hero-heading-footer-heading-and-copyright-line",
+      "title": "Replace the training center name text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” with “MALANCHA TAILORING TRAINING-CENTER” everywhere it appears in the visible UI, including (at minimum) the header brand text, hero heading, footer heading, and copyright line.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-seo-sharing-metadata-in-frontend-index-html-to-use-malancha-tailoring-training-center-document-title-meta-description-text-where-the-center-name-appears-open-graph-title-twitter-title-and-any-other-metadata-fields-containing-the-old-name-keep-all-user-facing-metadata-text-in-english",
+      "title": "Update SEO/sharing metadata in frontend/index.html to use “MALANCHA TAILORING TRAINING-CENTER” (document title, meta description text where the center name appears, Open Graph title, Twitter title, and any other metadata fields containing the old name). Keep all user-facing metadata text in English.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-regenerate-update-the-brand-logo-and-favicon-image-assets-to-include-the-name-malancha-tailoring-training-center-place-them-under-frontend-public-assets-generated-and-update-all-frontend-references-to-use-the-new-asset-filenames-header-logo-hero-logo-favicon-link-and-social-preview-image-if-used-also-update-logo-alt-text-strings-to-reflect-the-new-name",
+      "title": "Regenerate/update the brand logo and favicon image assets to include the name “MALANCHA TAILORING TRAINING-CENTER”, place them under frontend/public/assets/generated, and update all frontend references to use the new asset filenames (header logo, hero logo, favicon link, and social preview image if used). Also update logo alt text strings to reflect the new name.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -106,14 +155,40 @@
       "status": "pending"
     },
     {
-      "id": "AR-9",
-      "summary": "Update branding/site name to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” across header/hero/footer, SEO page title/metadata, and regenerate/update the logo to match.",
+      "id": "AR-10",
+      "summary": "Add the provided location/address in English to the Contact section and the footer (no Bengali version).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Replace the second poster image currently shown in the Gallery with the newly uploaded poster image (do not add it as an additional gallery item).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Publish/deploy the website (make it live).",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Update the backend deployment check so the website can be published: modify the `testDeployment` method in `backend/main.mo` to return successfully (no trap) while keeping the backend otherwise minimal for an informational site.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Change the website name/branding to “MALANCHA TAILORING TRAINING-CENTER” across all visible UI (header/hero/footer), update SEO/sharing metadata accordingly, and regenerate/update the logo to match.",
       "reqIds": [],
       "status": "pending"
     }
   ],
   "gameProjectType": "none",
-  "projectName": "MINAKHAN SKILL DEVELOPMENT TRAINING CENTER",
+  "projectName": "MALANCHA TAILORING TRAINING-CENTER",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }

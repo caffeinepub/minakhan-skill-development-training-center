@@ -1,79 +1,82 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Rebrand site to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” across UI, metadata, and logo assets",
+  "title": "Rebrand UI + metadata + assets to “MALANCHA TAILORING TRAINING-CENTER”",
   "requirements": [
     {
-      "id": "REQ-9",
-      "summary": "Replace all visible UI occurrences of the old training center name with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+      "id": "REQ-16",
+      "summary": "Replace the training center name in all visible UI locations (header, hero, footer, copyright) to “MALANCHA TAILORING TRAINING-CENTER” and remove any remaining visible instances of the old name.",
       "acceptanceCriteria": [
-        "Header brand text shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
-        "Hero H1 shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
-        "Footer training center name shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” in all occurrences.",
-        "No remaining occurrences of “Bidhathi” remain in user-visible page text."
+        "Header brand text displays exactly “MALANCHA TAILORING TRAINING-CENTER”.",
+        "Hero main heading displays exactly “MALANCHA TAILORING TRAINING-CENTER”.",
+        "Footer training center name displays exactly “MALANCHA TAILORING TRAINING-CENTER”.",
+        "Copyright line uses “MALANCHA TAILORING TRAINING-CENTER”.",
+        "No remaining visible instances of “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” appear anywhere on the page."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/SiteHeader.tsx",
           "operation": "modify",
-          "description": "Update the header brand text to exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” and ensure no user-visible “Bidhathi” remains."
+          "description": "Update header brand text to exactly “MALANCHA TAILORING TRAINING-CENTER”, and ensure the header logo alt text uses the new name. (Verify the component's usage instructions before implementing.)"
         },
         {
           "path": "frontend/src/components/TrainingCenterPage.tsx",
           "operation": "modify",
-          "description": "Update hero H1 and all footer occurrences (including copyright line) to exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, and update any related user-visible strings/alt text to remove “Bidhathi”."
+          "description": "Update hero heading text, footer heading, and footer copyright line to use “MALANCHA TAILORING TRAINING-CENTER” exactly everywhere the old name appears. Keep all user-facing text English-only. (Verify the component's usage instructions before implementing.)"
         }
       ]
     },
     {
-      "id": "REQ-10",
-      "summary": "Update SEO and sharing metadata to use the new training center name in English across title and social tags.",
+      "id": "REQ-17",
+      "summary": "Update SEO/sharing metadata in frontend/index.html to use “MALANCHA TAILORING TRAINING-CENTER” in all fields that contain the old name, keeping metadata text English-only.",
       "acceptanceCriteria": [
-        "The HTML <title> includes “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
-        "og:title and twitter:title are updated to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
-        "No metadata fields contain the old name."
+        "The <title> tag no longer contains “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” and includes “MALANCHA TAILORING TRAINING-CENTER”.",
+        "og:title and twitter:title are updated to “MALANCHA TAILORING TRAINING-CENTER”.",
+        "Any meta description content that contains the old name is updated to the new name.",
+        "All updated metadata remains English-only."
       ],
       "file_operations": [
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Replace old-name occurrences in SEO metadata with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, including <title>, meta description text where it includes the old name, og:title, and twitter:title; keep all metadata user-facing text in English."
+          "description": "Replace occurrences of “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” in <title>, meta description (where present), og:title, and twitter:title with “MALANCHA TAILORING TRAINING-CENTER”. Ensure all metadata remains English-only. (Verify the component's usage instructions before implementing.)"
         }
       ]
     },
     {
-      "id": "REQ-11",
-      "summary": "Add updated logo and favicon assets containing the new brand name and update all logo/favicon references across the site and social preview metadata.",
+      "id": "REQ-18",
+      "summary": "Add newly generated logo and favicon assets with required filenames under frontend/public/assets/generated, update all references (header/hero logos, favicon, social preview images), and update logo alt text to reflect the new name.",
       "acceptanceCriteria": [
-        "A new generated logo asset containing the text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” is added under frontend/public/assets/generated.",
-        "Header and hero logo <img> tags reference the new logo filename.",
-        "The social preview image metadata (og:image and twitter:image) references the updated logo asset (or another updated brand asset) and no longer points to an outdated logo containing the old name."
+        "New logo and favicon files exist under frontend/public/assets/generated with the exact filenames specified in imageRequirements.required.",
+        "The header and hero logo <img> src values reference the new logo filename, and their alt text includes “MALANCHA TAILORING TRAINING-CENTER”.",
+        "frontend/index.html favicon link references the new favicon filename.",
+        "frontend/index.html og:image and twitter:image reference the new logo filename (or another newly generated social image if provided), with no remaining references to the old minakhan logo filenames."
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png",
+          "path": "frontend/public/assets/generated/training-center-logo-malancha.dim_512x512.png",
           "operation": "create",
-          "description": "Add the regenerated brand logo image that includes the text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (per imageRequirements edit)."
+          "description": "Add the regenerated square training center logo image containing the text “MALANCHA TAILORING TRAINING-CENTER” with the exact required filename. (Verify the component's usage instructions before implementing.)"
         },
         {
-          "path": "frontend/public/assets/generated/favicon-minakhan.dim_64x64.png",
+          "path": "frontend/public/assets/generated/favicon-malancha.dim_64x64.png",
           "operation": "create",
-          "description": "Add the updated favicon matching the new logo styling (per imageRequirements edit)."
+          "description": "Add the regenerated favicon mark image for “MALANCHA TAILORING TRAINING-CENTER” with the exact required filename. (Verify the component's usage instructions before implementing.)"
         },
         {
           "path": "frontend/src/components/SiteHeader.tsx",
           "operation": "modify",
-          "description": "Update the header logo <img> src to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png and adjust alt text if needed to reflect the new branding."
+          "description": "Update header logo <img> src to reference frontend/public/assets/generated/training-center-logo-malancha.dim_512x512.png and update alt text to include “MALANCHA TAILORING TRAINING-CENTER”. (Verify the component's usage instructions before implementing.)"
         },
         {
           "path": "frontend/src/components/TrainingCenterPage.tsx",
           "operation": "modify",
-          "description": "Update the hero logo <img> src to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png and ensure alt text reflects the new branding (remove any old-name mentions)."
+          "description": "Update hero logo <img> src to reference frontend/public/assets/generated/training-center-logo-malancha.dim_512x512.png and update alt text to include “MALANCHA TAILORING TRAINING-CENTER”. Ensure no remaining references to prior logo filenames. (Verify the component's usage instructions before implementing.)"
         },
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Update favicon link to reference frontend/public/assets/generated/favicon-minakhan.dim_64x64.png, and update og:image and twitter:image to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png so social previews no longer use the outdated logo."
+          "description": "Update favicon link to reference frontend/public/assets/generated/favicon-malancha.dim_64x64.png. Update og:image and twitter:image to reference frontend/public/assets/generated/training-center-logo-malancha.dim_512x512.png. Remove any remaining references to old minakhan logo filenames. (Verify the component's usage instructions before implementing.)"
         }
       ]
     }

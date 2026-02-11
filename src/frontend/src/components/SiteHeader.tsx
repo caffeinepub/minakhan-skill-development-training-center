@@ -25,11 +25,11 @@ export default function SiteHeader() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src="/assets/generated/training-center-logo-minakhan.dim_512x512.png"
-              alt="MINAKHAN SKILL DEVELOPMENT TRAINING CENTER Logo"
+              src="/assets/generated/training-center-logo-malancha.dim_512x512.png"
+              alt="MALANCHA TAILORING TRAINING-CENTER Logo"
               className="h-10 w-10 object-contain"
             />
-            <span className="font-semibold text-lg hidden sm:inline-block">MINAKHAN SKILL DEVELOPMENT TRAINING CENTER</span>
+            <span className="font-semibold text-lg hidden sm:inline-block">MALANCHA TAILORING TRAINING-CENTER</span>
           </div>
 
           {/* Desktop Navigation */}

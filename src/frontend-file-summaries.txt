@@ -1,12 +1,12 @@
 {
   "frontend/src/App.tsx": "Main application entry component that renders the TrainingCenterPage component.",
-  "frontend/src/components/TrainingCenterPage.tsx": "Complete single-page training center website with hero section, courses grid, gallery, contact form, and footer displaying \"MINAKHAN SKILL DEVELOPMENT TRAINING CENTER\" throughout all sections and using the updated logo asset.",
-  "frontend/src/components/SiteHeader.tsx": "Sticky navigation header with logo, desktop menu, and mobile hamburger menu displaying \"MINAKHAN SKILL DEVELOPMENT TRAINING CENTER\" branding and referencing the new logo asset.",
+  "frontend/src/components/TrainingCenterPage.tsx": "Complete single-page training center website with hero section, courses grid, gallery (with 5 images including uploaded team photos), contact form, and footer displaying \"MALANCHA TAILORING TRAINING-CENTER\" throughout all sections with the English address.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky navigation header with logo, desktop menu, and mobile hamburger menu displaying \"MALANCHA TAILORING TRAINING-CENTER\" branding and referencing the new Malancha logo asset.",
   "frontend/src/components/Section.tsx": "Reusable section wrapper component providing consistent spacing, container width, and optional section titles.",
   "frontend/src/components/ContactForm.tsx": "Contact form with client-side validation for name, phone/email, and message fields, displaying inline errors and success state.",
   "frontend/src/components/SuccessBanner.tsx": "Success alert banner component displayed after successful form submission with green styling and checkmark icon.",
   "frontend/src/lib/utils.ts": "Utility function for merging Tailwind CSS classes using clsx and tailwind-merge.",
   "frontend/src/index.css": "Global styles with warm orange/coral OKLCH color system for light and dark modes, smooth scrolling, and typography hierarchy.",
-  "frontend/index.html": "HTML entry point with SEO metadata, Open Graph tags, Twitter cards, favicon, and page title/description updated to \"MINAKHAN SKILL DEVELOPMENT TRAINING CENTER\" and referencing the new logo and favicon assets.",
+  "frontend/index.html": "HTML entry point with SEO metadata, Open Graph tags, Twitter cards, favicon, and page title/description updated to \"MALANCHA TAILORING TRAINING-CENTER\" and referencing the new Malancha logo and favicon assets.",
   "frontend/tailwind.config.js": "Tailwind configuration extending the theme with custom fonts (Poppins for headings), maintaining OKLCH color tokens and design system."
 }

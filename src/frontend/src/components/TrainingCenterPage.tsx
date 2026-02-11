@@ -45,6 +45,10 @@ const galleryImages = [
     alt: 'Training Center Poster'
   },
   {
+    src: '/assets/uploaded/FB_IMG_1767544089711.jpg',
+    alt: 'Training Center Team Photo'
+  },
+  {
     src: '/assets/generated/gallery-1.dim_800x600.png',
     alt: 'Training Session 1'
   },
@@ -86,13 +90,13 @@ export default function TrainingCenterPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8 flex justify-center">
               <img
-                src="/assets/generated/training-center-logo-minakhan.dim_512x512.png"
-                alt="MINAKHAN SKILL DEVELOPMENT TRAINING CENTER Logo"
+                src="/assets/generated/training-center-logo-malancha.dim_512x512.png"
+                alt="MALANCHA TAILORING TRAINING-CENTER Logo"
                 className="h-24 w-24 md:h-32 md:w-32 object-contain drop-shadow-lg"
               />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 text-primary-foreground drop-shadow-md">
-              MINAKHAN SKILL DEVELOPMENT TRAINING CENTER
+              MALANCHA TAILORING TRAINING-CENTER
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
               Computer Training Center
@@ -187,9 +191,7 @@ export default function TrainingCenterPage() {
                   <div>
                     <p className="font-medium mb-1">Location</p>
                     <p className="text-muted-foreground">
-                      Malipukur Bazar (Boidhyanath Kartik Bituli)
-                      <br />
-                      Minapur, Uttar 24 Pargana
+                      Malancha Market, Harihata, Kormothitho Building, 2nd Floor
                     </p>
                   </div>
                 </div>
@@ -217,7 +219,7 @@ export default function TrainingCenterPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div>
-              <h4 className="text-xl font-semibold mb-4">MINAKHAN SKILL DEVELOPMENT TRAINING CENTER</h4>
+              <h4 className="text-xl font-semibold mb-4">MALANCHA TAILORING TRAINING-CENTER</h4>
               <p className="text-primary-foreground/80">
                 Empowering individuals with practical skills for a brighter future.
               </p>
@@ -252,13 +254,13 @@ export default function TrainingCenterPage() {
               <ul className="space-y-2 text-primary-foreground/80">
                 <li>7001154146</li>
                 <li>8240214166</li>
-                <li>Minapur, Uttar 24 Pargana</li>
+                <li>Malancha Market, Harihata, Kormothitho Building, 2nd Floor</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/80">
             <p>
-              © {new Date().getFullYear()} MINAKHAN SKILL DEVELOPMENT TRAINING CENTER. Built with ❤️ using{' '}
+              © {new Date().getFullYear()} MALANCHA TAILORING TRAINING-CENTER. Built with ❤️ using{' '}
               <a
                 href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(
                   typeof window !== 'undefined' ? window.location.hostname : 'training-center'

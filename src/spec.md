@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Update site branding to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” across visible UI text, SEO/sharing metadata, and logo assets.
+**Goal:** Update site branding to “MALANCHA TAILORING TRAINING-CENTER” across visible UI text, SEO/sharing metadata, and brand image assets.
 
 **Planned changes:**
-- Replace all user-visible occurrences of the old training center name (“Bidhathi Training Center” / “Bidhathi Skill Development Training Center”) with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (e.g., header, hero title, footer, and any other headings/labels).
-- Update SEO/sharing metadata to use “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (HTML title, Open Graph title, Twitter title, and any other metadata fields that contained the old name), keeping metadata text in English.
-- Update site logo assets to the new name and change all logo references in the UI and social preview metadata to point to the updated assets.
+- Replace all visible instances of “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” with “MALANCHA TAILORING TRAINING-CENTER” (header, hero, footer, copyright, and any other remaining UI text).
+- Update `frontend/index.html` SEO/sharing metadata fields to use “MALANCHA TAILORING TRAINING-CENTER” (title, meta description where applicable, Open Graph, Twitter), keeping metadata text in English.
+- Add new logo and favicon assets under `frontend/public/assets/generated` with updated naming, and update all frontend references and alt text to use the new assets/name (including favicon and any social preview image references).
 
-**User-visible outcome:** The site consistently displays “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” in the header, hero, footer, and other visible text, with matching updated browser/SEO titles and updated logo/favicon branding.
+**User-visible outcome:** The website consistently displays “MALANCHA TAILORING TRAINING-CENTER” in the UI and browser/preview metadata, with updated logo and favicon reflecting the new name.
