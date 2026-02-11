@@ -1,0 +1,81 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Rebrand site to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” across UI, metadata, and logo assets",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Replace all visible UI occurrences of the old training center name with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+      "acceptanceCriteria": [
+        "Header brand text shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "Hero H1 shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "Footer training center name shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” in all occurrences.",
+        "No remaining occurrences of “Bidhathi” remain in user-visible page text."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Update the header brand text to exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” and ensure no user-visible “Bidhathi” remains."
+        },
+        {
+          "path": "frontend/src/components/TrainingCenterPage.tsx",
+          "operation": "modify",
+          "description": "Update hero H1 and all footer occurrences (including copyright line) to exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, and update any related user-visible strings/alt text to remove “Bidhathi”."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Update SEO and sharing metadata to use the new training center name in English across title and social tags.",
+      "acceptanceCriteria": [
+        "The HTML <title> includes “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "og:title and twitter:title are updated to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "No metadata fields contain the old name."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Replace old-name occurrences in SEO metadata with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, including <title>, meta description text where it includes the old name, og:title, and twitter:title; keep all metadata user-facing text in English."
+        }
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "summary": "Add updated logo and favicon assets containing the new brand name and update all logo/favicon references across the site and social preview metadata.",
+      "acceptanceCriteria": [
+        "A new generated logo asset containing the text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” is added under frontend/public/assets/generated.",
+        "Header and hero logo <img> tags reference the new logo filename.",
+        "The social preview image metadata (og:image and twitter:image) references the updated logo asset (or another updated brand asset) and no longer points to an outdated logo containing the old name."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png",
+          "operation": "create",
+          "description": "Add the regenerated brand logo image that includes the text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (per imageRequirements edit)."
+        },
+        {
+          "path": "frontend/public/assets/generated/favicon-minakhan.dim_64x64.png",
+          "operation": "create",
+          "description": "Add the updated favicon matching the new logo styling (per imageRequirements edit)."
+        },
+        {
+          "path": "frontend/src/components/SiteHeader.tsx",
+          "operation": "modify",
+          "description": "Update the header logo <img> src to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png and adjust alt text if needed to reflect the new branding."
+        },
+        {
+          "path": "frontend/src/components/TrainingCenterPage.tsx",
+          "operation": "modify",
+          "description": "Update the hero logo <img> src to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png and ensure alt text reflects the new branding (remove any old-name mentions)."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update favicon link to reference frontend/public/assets/generated/favicon-minakhan.dim_64x64.png, and update og:image and twitter:image to reference frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png so social previews no longer use the outdated logo."
+        }
+      ]
+    }
+  ]
+}

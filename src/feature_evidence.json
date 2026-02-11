@@ -1,0 +1,62 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-replace-the-existing-training-center-name-text-bidhathi-training-center-bidhathi-skill-development-training-center-with-minakhan-skill-development-training-center-everywhere-it-appears-in-the-visible-ui-header-hero-title-footer-and-any-other-on-page-headings-or-labels-that-currently-use-the-old-name",
+      "featureTitle": "Replace the existing training center name text (“Bidhathi Training Center” / “Bidhathi Skill Development Training Center”) with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” everywhere it appears in the visible UI (header, hero title, footer, and any other on-page headings or labels that currently use the old name).",
+      "files": [
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/TrainingCenterPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-seo-sharing-metadata-to-use-minakhan-skill-development-training-center-document-title-open-graph-title-twitter-title-and-any-other-metadata-fields-that-currently-include-the-old-name-keep-all-user-facing-metadata-text-in-english",
+      "featureTitle": "Update SEO/sharing metadata to use “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (document title, Open Graph title, Twitter title, and any other metadata fields that currently include the old name). Keep all user-facing metadata text in English.",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-regenerate-update-the-brand-logo-image-to-include-the-name-minakhan-skill-development-training-center-and-update-the-site-to-reference-the-updated-logo-asset-everywhere-the-logo-is-used-header-hero-and-seo-social-preview-image-if-applicable",
+      "featureTitle": "Regenerate/update the brand logo image to include the name “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, and update the site to reference the updated logo asset everywhere the logo is used (header, hero, and SEO/social preview image if applicable).",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/SiteHeader.tsx",
+        "frontend/src/components/TrainingCenterPage.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-11"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

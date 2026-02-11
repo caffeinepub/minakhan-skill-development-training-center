@@ -1,0 +1,74 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T17:28:38.381Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 3,
+    "implemented": 3,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Update SEO/sharing metadata to use “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (document title, Open Graph title, Twitter title, and any other metadata fields that currently include the old name). Keep all user-facing metadata text in English.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-11",
+        "summary": "Regenerate/update the brand logo image to include the name “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, and update the site to reference the updated logo asset everywhere the logo is used (header, hero, and SEO/social preview image if applicable).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png",
+          "frontend/public/assets/generated/favicon-minakhan.dim_64x64.png",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/TrainingCenterPage.tsx",
+          "frontend/index.html"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png",
+          "frontend/public/assets/generated/favicon-minakhan.dim_64x64.png",
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/TrainingCenterPage.tsx",
+          "frontend/index.html"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Replace the existing training center name text (“Bidhathi Training Center” / “Bidhathi Skill Development Training Center”) with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” everywhere it appears in the visible UI (header, hero title, footer, and any other on-page headings or labels that currently use the old name).",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/TrainingCenterPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/SiteHeader.tsx",
+          "frontend/src/components/TrainingCenterPage.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/README.md",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/index.html",
+    "frontend/public/assets/generated/favicon-minakhan.dim_64x64.png",
+    "frontend/public/assets/generated/training-center-logo-minakhan.dim_512x512.png",
+    "frontend/src/components/SiteHeader.tsx",
+    "frontend/src/components/TrainingCenterPage.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

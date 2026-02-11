@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Minimal Motoko canister exposing a testDeployment method that always traps with an informational message.",
+  "feature_evidence.json": "Feature evidence report mapping UI rename, SEO metadata updates, and logo replacement tasks to affected frontend files and components.",
+  "frontend-file-summaries.txt": "List of concise summaries for all major frontend components, styles, and configuration files.",
+  "frontend/index.css": "Tailwind CSS base and design tokens defining light/dark theme variables and global styling.",
+  "frontend/index.html": "HTML entry with updated SEO, Open Graph, and Twitter metadata plus links to new logo and favicon assets.",
+  "frontend/src/App.tsx": "Root React component that renders the TrainingCenterPage.",
+  "frontend/src/components/ContactForm.tsx": "Validated contact form with inline errors, simulated submission, and success banner handling.",
+  "frontend/src/components/Section.tsx": "Reusable layout section wrapper with optional title and consistent spacing.",
+  "frontend/src/components/SiteHeader.tsx": "Sticky responsive header with logo, desktop navigation, and mobile menu toggle.",
+  "frontend/src/components/SuccessBanner.tsx": "Alert banner indicating successful message submission.",
+  "frontend/src/components/TrainingCenterPage.tsx": "Full training center page including hero, courses, gallery, contact form, and success message state logic.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing an authenticated or anonymous backend actor using react-query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Defines a React context and provider for managing Internet Identity auth state, including login, logout, and loading persisted identities. Implements AuthClient creation and exposes status flags and identity through a custom hook.",
+  "frontend/src/index.css": "Sets Tailwind base layers and defines light/dark theme OKLCH color variables and typography styles. Applies global element styling for layout, text, and headings.",
+  "frontend/src/lib/utils.ts": "Exports a utility function that merges class names using clsx and tailwind-merge to avoid conflicting Tailwind classes.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and the InternetIdentityProvider before rendering App. Imports global CSS.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom colors mapped to CSS variables, extended theme options, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Stores project metadata, requirements, and image update instructions for building a training center website per the provided poster."
+}

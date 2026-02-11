@@ -1,0 +1,97 @@
+{
+  "kind": "build_request",
+  "title": "Update site branding to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” across UI, SEO, and logo assets",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Replace the existing training center name text (“Bidhathi Training Center” / “Bidhathi Skill Development Training Center”) with “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” everywhere it appears in the visible UI (header, hero title, footer, and any other on-page headings or labels that currently use the old name).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-6"
+        ],
+        "quotes": [
+          "Website ka name MINAKHAN  SKILL DEVELOPMENT TRAINING CENTER HOGA",
+          "Yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header brand text shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "Hero H1 shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "Footer training center name shows exactly “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” in all occurrences.",
+        "No remaining occurrences of “Bidhathi” remain in user-visible page text."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update SEO/sharing metadata to use “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (document title, Open Graph title, Twitter title, and any other metadata fields that currently include the old name). Keep all user-facing metadata text in English.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-6"
+        ],
+        "quotes": [
+          "Website ka name MINAKHAN  SKILL DEVELOPMENT TRAINING CENTER HOGA",
+          "Yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The HTML <title> includes “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "og:title and twitter:title are updated to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”.",
+        "No metadata fields contain the old name."
+      ]
+    },
+    {
+      "id": "REQ-11",
+      "text": "Regenerate/update the brand logo image to include the name “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER”, and update the site to reference the updated logo asset everywhere the logo is used (header, hero, and SEO/social preview image if applicable).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-6"
+        ],
+        "quotes": [
+          "Website ka name MINAKHAN  SKILL DEVELOPMENT TRAINING CENTER HOGA",
+          "Yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new generated logo asset containing the text “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” is added under frontend/public/assets/generated.",
+        "Header and hero logo <img> tags reference the new logo filename.",
+        "The social preview image metadata (og:image and twitter:image) references the updated logo asset (or another updated brand asset) and no longer points to an outdated logo containing the old name."
+      ]
+    }
+  ],
+  "constraints": [
+    "Use English for all user-facing text.",
+    "Do not modify files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
+    "Keep the backend as-is (no new backend functionality) since this is an informational site."
+  ],
+  "nonGoals": [
+    "Adding new site sections or changing the single-page layout.",
+    "Changing course/program content beyond what is required for the name/branding update.",
+    "Implementing backend persistence, email/SMS sending, or any external integrations."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Update the logo text to “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” (training-center-logo.dim_512x512.png > training-center-logo-minakhan.dim_512x512.png)",
+      "Update the favicon to match the updated logo styling (favicon.dim_64x64.png > favicon-minakhan.dim_64x64.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [
+      "Use the site name “MINAKHAN SKILL DEVELOPMENT TRAINING CENTER” consistently across UI and brand assets."
+    ],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}
